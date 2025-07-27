@@ -1,0 +1,195 @@
+/* fonts for the all app */
+body{
+    font-family: "Plus Jakarta Sans",sans-serif;
+    font-weight: 700;
+    background-color: aliceblue;
+
+}
+/* fonts for the all app */
+
+/*container*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+/*container*/
+.users__box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+
+}
+.user{
+    width: 40%;
+    height: auto;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 50px;
+
+}
+
+ a {
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: red;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  a:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+ a:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+/*styles for user details*/
+.user__wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.user__full-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.container .user__wrapper a{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user__info-box {
+    flex: 1 1 calc(50% - 20px); /* Два блоки зверху */
+    background-color: #66ff66;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.user__info-box:last-child {
+    flex-basis: 100%; /* Останній блок на всю ширину */
+}
+
+.user__posts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.user__posts-link{
+    width: 90%;
+}
+
+
+/*styles for post details*/
+#post__box {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Блок з інформацією про пост */
+#post__box > div:first-child {
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+/* Заголовок Comments */
+#post__box > h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+#comment__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.comment {
+    flex: 0 0 calc(25% - 15px); /* 4 в ряд з урахуванням відступів */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comment h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/*styles for user details*/
+
+@media (max-width: 768px) {
+    .user__info-box {
+        flex-basis: 100%; /* При малій ширині всі підряд */
+    }
+}

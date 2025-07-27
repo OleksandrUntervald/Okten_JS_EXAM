@@ -1,0 +1,154 @@
+/* fonts for the all app */
+body{
+    font-family: "Plus Jakarta Sans",sans-serif;
+    font-weight: 700;
+    background-color: dodgerblue;
+}
+/* fonts for the all app */
+
+/*container*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+/*container*/
+/*btn styles*/
+.btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.4rem 1rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: white;
+}
+
+.btn span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.btn:hover span {
+    color: black;
+}
+
+.btn::before,
+.btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.btn::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+/*btn styles*/
+
+
+
+
+.programs__field{
+    width: 75.063vw;
+    height: 75vh;
+    background-color: aliceblue;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10%;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.programs__field--value{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.field__value--top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.value__top-box{
+    width: 70%;
+}
+.value__top-buttons{
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+.field__value--bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*styles for scrolling values Name=Value*/
+#field__text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    padding: 0 10px;
+}
+
+#field__text label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#field__text label input{
+    margin-top: 5px;
+}
+/*styles for scrolling values Name=Value*/
+.value__top-box{
+    width: 100%;
+}
+.input__value{
+    width: 90%;
+    height: 30px;
+}
+.input__list{
+    width: 90%;
+    height: 280px;
+    border: 2px solid black;
+    background-color: white;
+}

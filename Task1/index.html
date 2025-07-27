@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+       <!-- styles -->
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!--fonts-->
+    <!-- favicon-->
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon//favicon.svg" />
+    <link rel="shortcut icon" href="./favicon//favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon//apple-touch-icon.png" />
+
+    <!-- favicon-->
+    <title>JS_EXAM-TASK-1</title>
+</head>
+<body>
+<div class="container">
+    <form id="form" class="programs__field">
+        <h2>Test</h2>
+        <div class="programs__field--value">
+            <div class="field__value--top">
+                <div class="value__top-box">
+                    <p>Name/Value Pair</p>
+                    <input id="input__enter" name="inputValue" class="input__value" placeholder="Name=Value" type="text">
+                </div>
+                <div  class="value__top-buttons">
+                    <button id="btn__add" class="btn"><span>Add</span></button>
+                </div>
+
+            </div>
+            <div class="field__value--bottom">
+                <div class="value__top-box">
+                    <p> Name/Value Pair List</p>
+                    <div id="field__text" class="input__list">
+
+                    </div>
+                </div>
+
+                <div class="value__top-buttons">
+                    <button id="btn__sort-name" class="btn"><span>Sort by Name</span> </button>
+                    <button id="btn__sort-value" class="btn"><span>Sort by Value</span></button>
+                    <button id="btn__delete" class="btn"><span>Delete</span></button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+</body>
+<script src="./js/script.js"></script>
+</html>
